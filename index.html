@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .dom
+        {
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <section class="q-title">
+        
+        <h2 id="title">This is Dom</h2>
+        <ul>
+            <li class="dom">dom1</li>
+            <li class="dom">dom2</li>
+            <li class="dom">dom3</li>
+            <li>dom4</li>
+        </ul>
+    </section>
+      
+   <!-- get elemetment by tag name -->
+    <script src="dom.js"></script>
+    <script>
+    
+
+    //must know these things
+
+     //getelemetbytag
+     //getelementbyid
+     //getelementbyclass
+     //queryselectorall
+     //queryselector
+        const title = document.getElementById('title');
+        title.innerText = 'This is not dom';
+    //    const licollection = document.getElementsByTagName('li')
+    //    for(const li of licollection)
+    //    {
+    //     console.log(li.innerText);
+    //    }
+
+    //list is a variable where we will store data
+    //liar is a access variable to see output
+    //"dom" is a class name that we will access
+        const list = document.getElementsByClassName('dom')
+        for(const liar of list)
+        {
+             console.log(liar.innerText);
+        } 
+       
+        const sec_list = document.querySelectorAll(".q-title")
+        for(const li of sec_list)
+        {
+             console.log(li.innerText);
+        } 
+    </script>
+</body>
+</html>
