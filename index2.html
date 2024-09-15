@@ -12,6 +12,8 @@
     <button onclick="document.body.style.backgroundColor='green'">Another Click</button>
     <button onclick="makepurple()">Another Click2</button>
     <button id="blue">Another Click3</button>
+    <button id="tomato">Another Click4</button>
+    <button id="black">Another Click5</button>
 
      <script src="event.js"></script>
     <script>
@@ -20,6 +22,16 @@
         // {
         //     document.body.style.backgroundColor = 'blue';
         // }
+
+        const tomatoButton = document.getElementById("tomato");
+        tomatoButton.addEventListener('click',function maketomato() {
+            document.body.style.backgroundColor = 'tomato';
+        });
+
+        document.getElementById("black").addEventListener('click', function(){
+            document.body.style.backgroundColor='black';
+        })
+
     </script>
 </body>
 </html>
