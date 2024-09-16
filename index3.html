@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1 id="status">this is headng</h1>
+    <button onclick="handelOnClick()">click me1</button>
+    <button id="event-listener">click me2</button>
+    <button>click me3</button>
+    <button>click me4</button>
+
+     <p id="input-text">This is Input text field</p>
+    <input type="text"id="input-field">
+    <button id="up-btn">click me</button>
+
+    <script>
+    //    function handelOnClick()
+    //    {
+    //     const handlestatus = document.getElementById('status');
+    //     handlestatus.innerText = 'heading in changing';
+    //    }
+
+// document.getElementById('event-listener').addEventListener('click',function()
+// {
+//     const handlestatus = document.getElementById('status');
+//      handlestatus.innerText = 'heading in changing';
+// })
+  
+
+document.getElementById('up-btn').addEventListener('click',function()
+
+{
+    const inputField = document.getElementById('input-field');
+    const inputText = inputField.value;
+    const p = document.getElementById('input-text');
+    p.innerText = inputText;
+    inputField.value = '';
+})
+     
+    </script>
+</body>
+</html>
